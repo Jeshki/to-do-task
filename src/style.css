@@ -1,0 +1,85 @@
+/* Reset some default styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Apply a nice background */
+  body {
+    background-color: #e2eafc; /* Light blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styling for the to-do app container */
+  .todo-container {
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for modern look */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px; /* Set a max-width for larger screens */
+  }
+  
+  /* Style the to-do list items */
+  .todo-item {
+    background-color: #f7f7f7; /* Slightly off-white for the items */
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    border-radius: 5px; /* Rounded corners for the list items */
+  }
+  
+  /* Style the checkboxes */
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+  
+  /* Improve the button styling */
+  button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 5px; /* Rounded corners for the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Specific style for the clear button */
+  .clear-complete {
+    background-color: #f44336; /* Red background */
+  }
+  
+  .clear-complete:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Footer text styling */
+  .todo-footer {
+    text-align: center;
+    padding-top: 1rem;
+    color: #555; /* Dark grey color for the text */
+  }
+  
+  /* Add a bit of responsiveness */
+  @media (max-width: 768px) {
+    .todo-container {
+      width: 90%;
+    }
+  }
+  
